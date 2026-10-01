@@ -18,10 +18,24 @@
             position: relative;
 
         }
+
+        #runaway-btn {
+            position: absolute; /* จำเป็นต้องใช้ เพื่อให้ย้ายตำแหน่งตามพิกัด X, Y ได้ */
+            padding: 12px 24px;
+            font-size: 18px;
+            border-width: 2px;
+            border-color: rgb(255, 19, 19); ;
+            color: rgb(255, 19, 19);
+            border-radius: 100%;
+            cursor: pointer;
+            transition: all 0.1s ease; /* ช่วยให้ปุ่มขยับดูสมูทขึ้น */
+        }
+
     </style>
 </head>
 <body>
     <button id = "_button"> Click me </button>
+    <button id ="runaway-btn">x</button>
     <div id="box"></div>
     <script src="./index.js"></script>
 </body>
